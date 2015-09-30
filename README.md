@@ -9,7 +9,7 @@ The contents of this project is 2 files :
 
 To "check out" the project  you have a few choices - check https://help.github.com/articles/fetching-a-remote/ 
 
-Here are some basic Git tips that SHOULD be followed - 
+Here are some basic Git tips that SHOULD be followed if you will do changes to a GIT project- 
 	https://help.github.com/articles/set-up-git/ 
 	
 To load TOGAF Lite - Archisurance Case Study.eap you need Sparx Proffessional Edition Standard
