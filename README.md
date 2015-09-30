@@ -8,7 +8,10 @@ The contents of this project is 2 files :
   2) TOGAF Lite - Archisurance Case Study.eap
 
 To "check out" the project  you have a few choices - check https://help.github.com/articles/fetching-a-remote/ 
-  
+
+Here are some basic Git tips that SHOULD be followed - 
+	https://help.github.com/articles/set-up-git/ 
+	
 To load TOGAF Lite - Archisurance Case Study.eap you need Sparx Proffessional Edition Standard
 from http://sparxsystems.com/products/ea/purchase.html#Professional - then just open the file.
   
