@@ -1,5 +1,5 @@
-# SparxEA_ModelArchisurance
-Sparx Enterprise Architecture Model Archisurance
+# CommunicateEA_Patterns_CaseStudies
+Communicate EA Pattern Case Studies
 ==============================================================
 This is Communicates first (and very simple) Git Hub project - yippi!!!!
 
