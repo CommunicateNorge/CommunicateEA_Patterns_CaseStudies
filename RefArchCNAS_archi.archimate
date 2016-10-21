@@ -417,9 +417,6 @@ scheduled or continuous
       <element xsi:type="archimate:ApplicationService" id="EAID_98A333EA_C874_4285_8DCF_0354D9272DE6" name="Analytics"/>
       <element xsi:type="archimate:ApplicationService" id="EAID_71044D5E_2431_4b16_8BAB_0D0FEB27AC98" name="API"/>
       <element xsi:type="archimate:ApplicationService" id="EAID_2770E4B2_00FA_433a_BE0C_67FEC2C71A83" name="API Management"/>
-      <element xsi:type="archimate:ApplicationService" id="EAID_E72AC3BD_E15B_492e_B57B_E36B8140A70E" name="API Management">
-        <documentation>Med entkel api mapping</documentation>
-      </element>
       <element xsi:type="archimate:ApplicationService" id="EAID_041C0736_BED4_43df_BF7A_5ACED1976968" name="API Management">
         <documentation>Med entkel api mapping</documentation>
       </element>
