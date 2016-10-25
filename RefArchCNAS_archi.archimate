@@ -899,27 +899,48 @@ Sikkerhet/Compliancy/Personvern</documentation>
         <element xsi:type="archimate:Goal" id="cff6ca61" name="Increase process scalability"/>
         <element xsi:type="archimate:Goal" id="10e30647" name="Shorten company process lead times"/>
       </folder>
+      <folder name="Requirements" id="ec71f773">
+        <element xsi:type="archimate:Requirement" id="1c82682a" name="All automated activity must be logged according to metrics "/>
+        <element xsi:type="archimate:Requirement" id="726598cc" name="Business rules must be implemented outside individual applications"/>
+        <element xsi:type="archimate:Requirement" id="1b89e3b9" name="System functionality is accessible through api"/>
+        <element xsi:type="archimate:Requirement" id="e9845133" name="Systems reports are accessible through api"/>
+        <element xsi:type="archimate:Requirement" id="eb79c83f" name="Use BPA solution to orchestrate distributed processes"/>
+        <element xsi:type="archimate:Requirement" id="cdbe37f8" name="Use BPA Solution to reduce repeated manual tasks "/>
+        <element xsi:type="archimate:Requirement" id="f73ca94c" name="Use BPA solution to replace error prone tasks"/>
+        <element xsi:type="archimate:Requirement" id="6aecfe19" name="Use BPA solution to replace high volume manual tasks"/>
+        <element xsi:type="archimate:Requirement" id="f9c758c1" name="Use Business rules solution to replace complex tasks"/>
+        <element xsi:type="archimate:Requirement" id="f460463e" name="Use generic reporting system for all reporting">
+          <documentation>som sisense f.eks
+
+</documentation>
+        </element>
+        <element xsi:type="archimate:Requirement" id="97cd2af7" name="Use integration technology to orchestrate all system integrations"/>
+      </folder>
+    </folder>
+    <folder name="Time-To-Market" id="b49e9d5a">
+      <folder name="Assessments" id="d00c3c36"/>
+      <folder name="Goals" id="b22f4103"/>
     </folder>
     <element xsi:type="archimate:Driver" id="fdfe26a6" name="Worker Productivity"/>
     <element xsi:type="archimate:Stakeholder" id="c18f33c5" name="Top Management"/>
     <element xsi:type="archimate:Stakeholder" id="9922fe9e" name="LoB Management"/>
     <element xsi:type="archimate:Stakeholder" id="7e6fe7a8" name="Worker"/>
     <element xsi:type="archimate:Stakeholder" id="a4abdf83" name="IT management"/>
-    <element xsi:type="archimate:Requirement" id="e9845133" name="Systems reports are accessible through api"/>
-    <element xsi:type="archimate:Requirement" id="f460463e" name="Use generic reporting system for all reporting">
-      <documentation>som sisense f.eks
-
+    <element xsi:type="archimate:Driver" id="3f7e5659" name="Accelerate Time To Market"/>
+    <element xsi:type="archimate:Requirement" id="0a254e8c" name="Lengthy projects"/>
+    <element xsi:type="archimate:Requirement" id="9c813175" name="Inadequate tools">
+      <documentation>vendor driven design
 </documentation>
     </element>
-    <element xsi:type="archimate:Requirement" id="1b89e3b9" name="System functionality is accessible through api"/>
-    <element xsi:type="archimate:Requirement" id="1c82682a" name="All automated activity must be logged according to metrics "/>
-    <element xsi:type="archimate:Requirement" id="6aecfe19" name="Use BPA solution to replace high volume manual tasks"/>
-    <element xsi:type="archimate:Requirement" id="cdbe37f8" name="Use BPA Solution to reduce repeated manual tasks "/>
-    <element xsi:type="archimate:Requirement" id="f9c758c1" name="Use Business rules solution to replace complex tasks"/>
-    <element xsi:type="archimate:Requirement" id="97cd2af7" name="Use integration technology to orchestrate all system integrations"/>
-    <element xsi:type="archimate:Requirement" id="726598cc" name="Business rules must be implemented outside individual applications"/>
-    <element xsi:type="archimate:Requirement" id="f73ca94c" name="Use BPA solution to replace error prone tasks"/>
-    <element xsi:type="archimate:Requirement" id="eb79c83f" name="Use BPA solution to orchestrate distributed processes"/>
+    <element xsi:type="archimate:Requirement" id="1fbd8422" name="Insufficient feedback"/>
+    <element xsi:type="archimate:Requirement" id="bae4f0bb" name="Complex solutions"/>
+    <element xsi:type="archimate:Requirement" id="97b4ce72" name="Inadequate testing"/>
+    <element xsi:type="archimate:Requirement" id="cb3a2054" name="Poor design"/>
+    <element xsi:type="archimate:Requirement" id="cab76277" name="Lack of accountability"/>
+    <element xsi:type="archimate:Requirement" id="f7763557" name="Poor communication"/>
+    <element xsi:type="archimate:Requirement" id="1ec72be9" name="Unclear outcome"/>
+    <element xsi:type="archimate:Requirement" id="95ec9c6a" name="Limited access to environments"/>
+    <element xsi:type="archimate:Requirement" id="5d3e0c44" name="Re-inventing the wheel"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="2d959318" type="implementation_migration"/>
   <folder name="Connectors" id="38034467" type="connectors"/>
@@ -2170,6 +2191,48 @@ access control
           <sourceConnection xsi:type="archimate:Connection" id="5676a2ee" source="808436fe" target="b5807ab2" relationship="9d5dd799"/>
         </child>
       </element>
+    </folder>
+    <folder name="Time-To-Market" id="56f04e4d">
+      <element xsi:type="archimate:ArchimateDiagramModel" id="fe77a1ca" name="TTM Goals" viewpoint="22">
+        <child xsi:type="archimate:DiagramObject" id="e401c37f" textAlignment="2" archimateElement="3f7e5659">
+          <bounds x="504" y="516" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9361c3b7" textAlignment="2" archimateElement="0a254e8c">
+          <bounds x="228" y="396" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ef525e16" textAlignment="2" archimateElement="9c813175">
+          <bounds x="653" y="312" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="57ebe0ec" textAlignment="2" archimateElement="1fbd8422">
+          <bounds x="216" y="612" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="400717e5" textAlignment="2" archimateElement="bae4f0bb">
+          <bounds x="180" y="516" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="787dccb6" textAlignment="2" archimateElement="97b4ce72">
+          <bounds x="876" y="506" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e24f3ab6" textAlignment="2" archimateElement="cb3a2054">
+          <bounds x="828" y="396" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="8db69c7f" textAlignment="2" archimateElement="cab76277">
+          <bounds x="744" y="624" width="152" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="60ebdca5" textAlignment="2" archimateElement="f7763557">
+          <bounds x="644" y="735" width="137" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="33af7b3a" textAlignment="2" archimateElement="1ec72be9">
+          <bounds x="276" y="696" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="093dcfbb" textAlignment="2" archimateElement="95ec9c6a">
+          <bounds x="385" y="300" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="039d6a97" textAlignment="2" archimateElement="5d3e0c44">
+          <bounds x="514" y="761" width="120" height="55"/>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" id="74ecc10b" name="TTM Requirements"/>
+      <element xsi:type="archimate:ArchimateDiagramModel" id="4db1b4b0" name="TTM Stakeholders"/>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" id="EAID_CD4E625E_8F63_4e3e_92DC_300A6B59491C" name="ViewPoints - 1 Helt Overordnet">
       <child xsi:type="archimate:Group" id="EAID_DN000000_3B2B_4ab5_B206_BC2F0DF0EE9F" name="Ecosystem - &quot;Mode 2&quot;" textAlignment="1" fillColor="#69da6d">
