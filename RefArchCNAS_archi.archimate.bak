@@ -1434,13 +1434,11 @@ e.l.</documentation>
     <element xsi:type="archimate:FlowRelationship" id="3aa5b710" source="24e29a60" target="8552ce4a"/>
     <element xsi:type="archimate:FlowRelationship" id="9170edd1" source="24e29a60" target="9610b2ed"/>
     <element xsi:type="archimate:FlowRelationship" id="1ad69332" source="24e29a60" target="36a7f6da"/>
-    <element xsi:type="archimate:UsedByRelationship" id="004ce3ed" source="3b83f176" target="e04b52a7"/>
+    <element xsi:type="archimate:UsedByRelationship" id="004ce3ed" source="3b83f176" target="36a7f6da"/>
     <element xsi:type="archimate:AccessRelationship" id="4e1e006e" source="e04b52a7" target="3ed32d0d"/>
     <element xsi:type="archimate:AccessRelationship" id="4950acf1" source="8552ce4a" target="3ed32d0d"/>
     <element xsi:type="archimate:AggregationRelationship" id="4dab6605" source="cd0def21" target="2bcb0f88"/>
     <element xsi:type="archimate:UsedByRelationship" id="79411654" source="897a4e40" target="2bcb0f88"/>
-    <element xsi:type="archimate:AggregationRelationship" id="325e4ac3" source="e04b52a7" target="36a7f6da"/>
-    <element xsi:type="archimate:AggregationRelationship" id="919a59c2" source="e04b52a7" target="9610b2ed"/>
   </folder>
   <folder name="Views" id="50049961" type="diagrams">
     <folder name="Customer Experience" id="6b986a33">
@@ -3254,7 +3252,7 @@ Produktene i seg selv kjører på jvm og jvm støtter det som underliggende os <
         <bounds x="205" y="804" width="120" height="55"/>
       </child>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" id="81e07934" name="New ArchiMate View" connectionRouterType="2">
+    <element xsi:type="archimate:ArchimateDiagramModel" id="81e07934" name="New ArchiMate View" connectionRouterType="1">
       <child xsi:type="archimate:DiagramObject" id="95c04bb0" textAlignment="2" archimateElement="EAID_2770E4B2_00FA_433a_BE0C_67FEC2C71A83" type="1">
         <bounds x="84" y="240" width="2053" height="337"/>
         <child xsi:type="archimate:DiagramObject" id="2cdb6b5c" textAlignment="2" archimateElement="ae4866f9" type="1">
@@ -3310,9 +3308,15 @@ Produktene i seg selv kjører på jvm og jvm støtter det som underliggende os <
       </child>
       <child xsi:type="archimate:DiagramObject" id="389705df" textAlignment="2" archimateElement="dd338e41" type="1">
         <bounds x="216" y="777" width="1920" height="337"/>
+        <child xsi:type="archimate:DiagramObject" id="4d3c302e" textAlignment="2" archimateElement="EAID_85C6FDF1_3810_4ca2_8631_B7B228393147" type="1">
+          <bounds x="24" y="168" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="8af132a1" textAlignment="2" targetConnections="e45f34fc 6cd5f8a0 d1cffca8" archimateElement="36a7f6da" type="1">
+          <bounds x="463" y="90" width="126" height="55"/>
+        </child>
         <child xsi:type="archimate:DiagramObject" id="6634359b" textAlignment="2" archimateElement="3b83f176" type="1">
-          <bounds x="744" y="144" width="133" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="d1cffca8" source="6634359b" target="8e17672c" relationship="004ce3ed"/>
+          <bounds x="684" y="90" width="133" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="d1cffca8" source="6634359b" target="8af132a1" relationship="004ce3ed"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="091ffd91" textAlignment="2" archimateElement="24e29a60" type="1">
           <bounds x="293" y="18" width="120" height="55"/>
@@ -3323,8 +3327,11 @@ Produktene i seg selv kjører på jvm og jvm støtter det som underliggende os <
           <sourceConnection xsi:type="archimate:Connection" id="6cd5f8a0" source="091ffd91" target="8af132a1" relationship="1ad69332"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="863df0cb" textAlignment="2" targetConnections="d7e04903" archimateElement="8552ce4a" type="1">
-          <bounds x="84" y="144" width="132" height="55"/>
+          <bounds x="120" y="90" width="132" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="559d6a4d" source="863df0cb" target="5a6f62c5" relationship="4950acf1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="9046ebec" textAlignment="2" targetConnections="29c67068 3e7c3d60" archimateElement="9610b2ed" type="1">
+          <bounds x="312" y="90" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="a272e6a6" textAlignment="2" archimateElement="6a999880" type="1">
           <bounds x="1716" y="48" width="120" height="55"/>
@@ -3333,34 +3340,36 @@ Produktene i seg selv kjører på jvm og jvm støtter det som underliggende os <
           <bounds x="1728" y="168" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="b609036c" textAlignment="2" archimateElement="2916ba79">
-          <bounds x="276" y="264" width="120" height="55"/>
+          <bounds x="732" y="252" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="5d8fa66c" textAlignment="2" targetConnections="ff942c76" archimateElement="a858ffe7">
           <bounds x="588" y="18" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="5a6f62c5" textAlignment="2" targetConnections="3465944b 559d6a4d 188c54f7" archimateElement="3ed32d0d">
-          <bounds x="84" y="264" width="120" height="55"/>
+          <bounds x="156" y="264" width="120" height="55"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="8e17672c" textAlignment="2" targetConnections="d1cffca8" archimateElement="e04b52a7" type="1">
-          <bounds x="300" y="84" width="349" height="163"/>
+        <child xsi:type="archimate:DiagramObject" id="8e17672c" textAlignment="2" archimateElement="e04b52a7" type="1">
+          <bounds x="324" y="204" width="253" height="73"/>
+          <sourceConnection xsi:type="archimate:Connection" id="29c67068" source="8e17672c" target="9046ebec" relationship="ed6c029e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="e45f34fc" source="8e17672c" target="8af132a1" relationship="f2ad17af"/>
           <sourceConnection xsi:type="archimate:Connection" id="3465944b" source="8e17672c" target="5a6f62c5" relationship="4e1e006e"/>
-          <child xsi:type="archimate:DiagramObject" id="8af132a1" textAlignment="2" targetConnections="6cd5f8a0" archimateElement="36a7f6da" type="1">
-            <bounds x="192" y="60" width="126" height="55"/>
-          </child>
-          <child xsi:type="archimate:DiagramObject" id="9046ebec" textAlignment="2" targetConnections="3e7c3d60" archimateElement="9610b2ed" type="1">
-            <bounds x="24" y="60" width="120" height="55"/>
-          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="97c61f21" textAlignment="2" targetConnections="ffa5898f" archimateElement="3daa0894">
+          <bounds x="24" y="18" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="676f332c" source="97c61f21" target="f2ad3473" relationship="a51c5af4"/>
+          <sourceConnection xsi:type="archimate:Connection" id="79af9ab1" source="97c61f21" target="d471bf55" relationship="1aa14f32"/>
+          <sourceConnection xsi:type="archimate:Connection" id="fe4f3a33" source="97c61f21" target="ef8f73ae" relationship="67b62713"/>
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="f2ad3473" textAlignment="2" targetConnections="5441b144 676f332c" archimateElement="be71d2a5">
-        <bounds x="-71" y="828" width="120" height="55"/>
+        <bounds x="-48" y="918" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="c73be5a3" textAlignment="2" archimateElement="43dccecf">
         <bounds x="864" y="588" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="03166bb3" source="c73be5a3" target="d471bf55" relationship="5e020093"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="0ae08028" textAlignment="2" archimateElement="cd0def21" type="1">
-        <bounds x="-18" y="1188" width="1884" height="109"/>
+        <bounds x="241" y="1185" width="1884" height="109"/>
         <child xsi:type="archimate:DiagramObject" id="68ad8f22" textAlignment="2" archimateElement="292e4dfa" type="1">
           <bounds x="60" y="36" width="145" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="5441b144" source="68ad8f22" target="f2ad3473" relationship="faa1825d"/>
@@ -3428,20 +3437,11 @@ Produktene i seg selv kjører på jvm og jvm støtter det som underliggende os <
         <bounds x="960" y="78" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="550329ba" textAlignment="2" archimateElement="43dccecf">
-        <bounds x="360" y="1320" width="120" height="55"/>
+        <bounds x="360" y="1128" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="188c54f7" source="550329ba" target="5a6f62c5" relationship="5ec6b7f2"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="f9950483" textAlignment="2" archimateElement="897a4e40">
         <bounds x="888" y="1332" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="f623d566" textAlignment="2" archimateElement="43dccecf">
-        <bounds x="528" y="1320" width="120" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="97c61f21" textAlignment="2" targetConnections="ffa5898f" archimateElement="3daa0894" type="1">
-        <bounds x="77" y="828" width="80" height="73"/>
-        <sourceConnection xsi:type="archimate:Connection" id="676f332c" source="97c61f21" target="f2ad3473" relationship="a51c5af4"/>
-        <sourceConnection xsi:type="archimate:Connection" id="79af9ab1" source="97c61f21" target="d471bf55" relationship="1aa14f32"/>
-        <sourceConnection xsi:type="archimate:Connection" id="fe4f3a33" source="97c61f21" target="ef8f73ae" relationship="67b62713"/>
       </child>
     </element>
   </folder>
